@@ -598,18 +598,34 @@ footer .copyright {
     left: 3%;
   }
 }
-.projects .projects-menu {
+.projects .projects-main .projects-menu {
   margin: 30px 0 0 0;
   width: 100%;
 }
-.projects .projects-menu .tab-container {
+.projects .projects-main .projects-menu .txt-container {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 35px;
+}
+@media (max-width: 400px) {
+  .projects .projects-main .projects-menu .txt-container {
+    margin-right: 0;
+  }
+}
+.projects .projects-main .projects-menu .txt-container p {
+  margin-bottom: 35px;
+}
+.projects .projects-main .projects-menu .tab-container {
+  font-size: 1.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 45px 0;
 }
 @media (max-width: 400px) {
-  .projects .projects-menu .tab-container {
+  .projects .projects-main .projects-menu .tab-container {
     flex-direction: column;
   }
 }
@@ -641,6 +657,7 @@ footer .copyright {
   }
 }
 .projects .tab-item .txt-and-img-container .txt-container {
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -933,6 +950,21 @@ footer .copyright {
     flex-direction: column;
   }
 }
+.services .services-menu .txt-container {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 35px;
+}
+@media (max-width: 400px) {
+  .services .services-menu .txt-container {
+    margin-right: 0;
+  }
+}
+.services .services-menu .txt-container p {
+  margin-bottom: 35px;
+}
 .services .tab-item {
   display: none;
   margin: 20px 0 55px 0;
@@ -961,6 +993,7 @@ footer .copyright {
   }
 }
 .services .tab-item .txt-and-img-container .txt-container {
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1189,12 +1222,12 @@ footer .copyright {
   }
 }
 .jumbotron-about h1 {
+  position: absolute;
+  top: 155px;
   font-size: 64px;
   font-weight: 700;
   line-height: 75px;
   color: #ffffff;
-  position: absolute;
-  top: 155px;
 }
 @media (max-width: 400px) {
   .jumbotron-about h1 {
