@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+@media (max-width: 400px) {
+  .container {
+    width: 90%;
+  }
+}
+.img-desktop {
+  display: block;
+}
+@media (max-width: 400px) {
+  .img-desktop {
+    display: none;
+  }
+}
+.img-mobile {
+  display: none;
+}
+@media (max-width: 400px) {
+  .img-mobile {
+    display: block;
+  }
+}
