@@ -128,12 +128,12 @@
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.submit{
-  background: #DDDD;
-  font: black;
+.cards .bottom-content-about .dark-banner .submit:hover{
+  background: solid black;
 }
 input[type="submit"] {
   font-size: 1.8rem;
+  color: solid black;
   width: 140px;
   display: flex;
   flex-direction: column;
