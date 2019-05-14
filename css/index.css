@@ -142,6 +142,12 @@ v2.0b1 | 201101
 NOTE:WORK IN PROGRESS
 USE WITH CAUTION AND TEST WITH ABANDON */
 /* Your Code Goes Here */
+.jumbotron-text {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 75px;
+  color: white;
+}
 .width-100 {
   width: 100%;
 }
@@ -293,7 +299,14 @@ html {
   }
 }
 .img-desktop {
+ 
   display: block;
+  transition-duration: 2000ms;
+  transition-delay: 0s;
+  transition-timing-function: linear; 
+}
+ .img-desktop:hover {
+  transform: scale(1.5);
 }
 @media (max-width: 400px) {
   .img-desktop {
@@ -394,11 +407,12 @@ header .close-button {
   font-size: 4.8rem;
   font-weight: 700;
   line-height: 8.5rem;
+  color: white;
   text-decoration: none;
   color: #ffffff;
 }
 header .close-button:hover {
-  color: #222222;
+  color: black;
   cursor: pointer;
 }
 @media (max-width: 400px) {
@@ -408,11 +422,11 @@ header .close-button:hover {
     font-size: 4.8rem;
     font-weight: 700;
     line-height: 8.5rem;
-    color: #ffffff;
+    color: white;
     text-decoration: none;
   }
   header .close-button:hover {
-    color: #222222;
+    color: black;
     cursor: pointer;
   }
 }
@@ -421,7 +435,7 @@ footer {
   background-color: #828282;
   padding: 70px 80px 20px 80px;
   flex-direction: column;
-  color: #ffffff;
+  color: white;
   font-size: 1.3rem;
   font-weight: 400;
   line-height: 2.6rem;
@@ -434,7 +448,7 @@ footer {
   }
 }
 footer h3 {
-  color: #ffffff;
+  color: white;
   font-size: 1.9rem;
   font-weight: 400;
   line-height: 2.6rem;
@@ -586,7 +600,7 @@ footer .copyright {
   font-size: 64px;
   font-weight: 700;
   line-height: 75px;
-  color: #ffffff;
+  color: white;
   position: absolute;
   top: 155px;
 }
@@ -641,7 +655,7 @@ footer .copyright {
 .projects .tab-item h2 {
   font-size: 2.4rem;
   font-weight: 700;
-  color: #222222;
+  color: black;
   margin: 24px 0;
 }
 .projects .tab-item .txt-and-img-container {
@@ -685,8 +699,8 @@ footer .copyright {
   border: 1px solid black;
 }
 .projects .tabs-link:hover {
-  color: #ffffff;
-  background: #222222;
+  color: white;
+  background: black;
   cursor: pointer;
 }
 @media (max-width: 400px) {
@@ -732,7 +746,7 @@ footer .copyright {
   font-size: 64px;
   font-weight: 700;
   line-height: 75px;
-  color: #ffffff;
+  color: white;
   position: absolute;
   top: 325px;
 }
@@ -784,7 +798,7 @@ footer .copyright {
 .top-content .txt-content h2 {
   font-size: 2.4rem;
   font-weight: 700;
-  color: #222222;
+  color: black;
 }
 @media (max-width: 400px) {
   .top-content .txt-content h2 {
@@ -835,7 +849,7 @@ footer .copyright {
 .bottom-content h2 {
   font-size: 2.4rem;
   font-weight: 700;
-  color: #222222;
+  color: black;
   margin-bottom: 50px;
 }
 .bottom-content .gray-header-and-img-container {
@@ -923,7 +937,7 @@ footer .copyright {
   font-size: 64px;
   font-weight: 700;
   line-height: 75px;
-  color: #ffffff;
+  color: white;
   position: absolute;
   top: 135px;
 }
@@ -977,7 +991,7 @@ footer .copyright {
 .services .tab-item h2 {
   font-size: 2.4rem;
   font-weight: 700;
-  color: #222222;
+  color: black;
   margin: 24px 0;
 }
 .services .tab-item .txt-and-img-container {
@@ -1021,8 +1035,8 @@ footer .copyright {
   border: 1px solid black;
 }
 .services .tabs-link:hover {
-  color: #ffffff;
-  background: #222222;
+  color: white;
+  background: black;
   cursor: pointer;
 }
 @media (max-width: 400px) {
@@ -1068,7 +1082,7 @@ footer .copyright {
   font-size: 64px;
   font-weight: 700;
   line-height: 75px;
-  color: #ffffff;
+  color: white;
   position: absolute;
   top: 155px;
 }
@@ -1106,7 +1120,7 @@ footer .copyright {
 .contact-form-container h2 {
   font-size: 2.4rem;
   font-weight: 700;
-  color: #222222;
+  color: black;
   margin-bottom: 45px;
 }
 .contact-form-container .form-elem {
@@ -1179,7 +1193,7 @@ footer .copyright {
 .contact-loc-container h2 {
   font-size: 2.4rem;
   font-weight: 700;
-  color: #222222;
+  color: black;
   margin-bottom: 45px;
 }
 .contact-loc-container .contact-loc {
@@ -1227,10 +1241,10 @@ footer .copyright {
   font-size: 64px;
   font-weight: 700;
   line-height: 75px;
-  color: #ffffff;
+  color: white;
 }
 @media (max-width: 400px) {
-  .jumbotron-about h1 {
+  .jumbotron-about {
     line-height: 4rem;
     font-size: 3.5rem;
     top: 200px;
@@ -1240,7 +1254,7 @@ footer .copyright {
 .top-content-about .heading-and-subtitle h2 {
   font-size: 2.4rem;
   font-weight: 700;
-  color: #222222;
+  color: black;
   text-align: center;
   padding-top: 40px;
 }
@@ -1250,7 +1264,7 @@ footer .copyright {
   padding-top: 20px;
   padding-bottom: 40px;
 }
-.cards {
+.top-content-about .cards {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1258,33 +1272,36 @@ footer .copyright {
   max-width: 900px;
 }
 @media (max-width: 400px) {
-  .cards {
+  .top-content-about .cards {
     flex-direction: column;
     margin-bottom: 10px;
   }
 }
-.cards .card {
+.top-content-about .cards .card:hover {
+  transform: scale(1.25);
+}
+.top-content-about .cards .card {
   margin: 0 10px;
   padding: 10px;
   border: 1px solid #eee;
   -moz-box-shadow: 0 0 3px #ddd;
   -webkit-box-shadow: 0 0 3px #ddd;
   box-shadow: 0 0 3px #ddd;
-}
-@media (max-width: 400px) {
-  .cards .card {
-    margin: 5px auto;
-  }
-}
-.cards .card h3 {
-  font-size: 2.4rem;
-  font-weight: 700;
-  color: #222222;
   font-size: 1.9rem;
   text-align: center;
   margin-top: 2px;
 }
-.bottom-content-about {
+@media (max-width: 400px) {
+  .top-content-about .cards .card {
+    margin: 5px auto;
+  }
+}
+.top-content-about .cards .card h3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: black;
+}
+.top-content-about .bottom-content-about {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1292,30 +1309,30 @@ footer .copyright {
   margin-top: 40px;
 }
 @media (max-width: 400px) {
-  .bottom-content-about {
+  .top-content-about .bottom-content-about {
     display: none;
   }
 }
-.bottom-content-about .dark-banner {
+.top-content-about .bottom-content-about .dark-banner {
   height: 230px;
   width: 100vw;
   background-color: #333;
 }
-.bottom-content-about .dark-banner h1 {
-  color: #ffffff;
+.top-content-about .bottom-content-about .dark-banner h1 {
+  color: white;
   font-size: 6.5rem;
   font-weight: 300;
   padding: 50px;
   text-align: center;
 }
-.bottom-content-about .dark-banner h2 {
-  color: #ffffff;
+.top-content-about .bottom-content-about .dark-banner h2 {
+  color: white;
   font-size: 7.2rem;
   font-weight: 200;
   line-height: 6.8rem;
   text-align: center;
 }
-.bottom-content-about .company-logos {
+.top-content-about .bottom-content-about .company-logos {
   margin-top: 30px;
   margin-bottom: 30px;
 }

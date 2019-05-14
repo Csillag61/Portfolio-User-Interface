@@ -30,10 +30,10 @@
     h1 {
       position: absolute;
       top: 155px;
-        .jumbotron-text;
-        
-  
-      @media (max-width: 400px) {
+      .jumbotron-text;
+    }
+
+        @media (max-width: 400px) {
         line-height: 4rem;
         font-size: 3.5rem;
         top: 200px;
@@ -41,7 +41,7 @@
       }
   
     }
-  }
+  
   
   .top-content-about {
     .heading-and-subtitle {
@@ -58,7 +58,7 @@
         padding-bottom: 40px;
       }
     }
-  }
+  
   
   .cards {
     display: flex;
@@ -71,7 +71,10 @@
       flex-direction: column;
       margin-bottom: 10px;
     }
-  
+    
+    .card:hover{
+      transform: scale(1.25);
+    }
     .card {
       margin: 0 10px;
       padding: 10px;
@@ -86,12 +89,18 @@
       
       h3 {
         .sub-heading;
+          
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: black;
+        }
+        
         font-size: 1.9rem;
         text-align: center;
         margin-top: 2px;
       }
     }
-  }
+  
   
   .bottom-content-about {
     display: flex;
@@ -109,14 +118,14 @@
       width: 100vw;
       background-color: #333;
       h1 {
-        color: @white;
+        color: white;
         font-size: 6.5rem;
         font-weight: 300;
         padding: 50px;
         text-align: center;
       }
       h2 {
-        color: @white;
+        color: white;
         font-size: 7.2rem;
         font-weight: 200;
         line-height: 6.8rem;
@@ -129,6 +138,6 @@
       margin-bottom: 30px;
     }
   }
- 
+  }
   
   

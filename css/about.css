@@ -1,0 +1,136 @@
+.jumbotron-about {
+  width: 1024px;
+  height: 250px;
+  margin: 0 auto;
+  background: url("../img/about/about_jumbotron.jpg");
+}
+@media (max-width: 400px) {
+  .jumbotron-about {
+    width: 100%;
+    background: url("../img/about/about-mobile-jumbotron.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 260px;
+  }
+}
+.jumbotron-about img {
+  width: 100%;
+}
+.jumbotron-about .container {
+  height: 100%;
+}
+@media (max-width: 400px) {
+  .jumbotron-about .container {
+    height: 260px;
+    width: 100%;
+  }
+}
+.jumbotron-about h1 {
+  position: absolute;
+  top: 155px;
+}
+.jumbotron-about h1 {
+  
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 75px;
+  color: white;
+}
+@media (max-width: 400px) {
+  .jumbotron-about h1 {
+    line-height: 4rem;
+    font-size: 3.5rem;
+    top: 200px;
+    left: 3%;
+  }
+}
+.top-content-about .heading-and-subtitle h2 {
+  text-align: center;
+  padding-top: 40px;
+}
+.top-content-about .heading-and-subtitle h2 .sub-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: black;
+}
+.top-content-about .heading-and-subtitle p {
+  font-size: 1.8rem;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+section .cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+  transition-duration: 2000ms;
+  transition-delay: 0s;
+  transition-timing-function: linear; 
+}
+@media (max-width: 400px) {
+  .cards {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}
+.cards .card:hover {
+  transform: scale(1.25);
+}
+.cards .card {
+  margin: 0 10px;
+  padding: 10px;
+  border: 1px solid #eee;
+  -moz-box-shadow: 0 0 3px #ddd;
+  -webkit-box-shadow: 0 0 3px #ddd;
+  box-shadow: 0 0 3px #ddd;
+  
+}
+@media (max-width: 400px) {
+  .cards .card {
+    margin: 5px auto;
+  }
+}
+.cards .card h3 {
+  font-size: 1.9rem;
+  text-align: center;
+  margin-top: 2px;
+  padding-bottom: 20px;
+}
+.cards .card h3 .sub-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: black;
+}
+.cards .bottom-content-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+@media (max-width: 400px) {
+  .cards .bottom-content-about {
+    display: none;
+  }
+}
+.cards .bottom-content-about .dark-banner {
+  height: 230px;
+  width: 100vw;
+  background-color: #333;
+}
+
+.cards .bottom-content-about .dark-banner h2 {
+  color: white;
+  font-size: 7.2rem;
+  font-weight: 200;
+  line-height: 6.8rem;
+  text-align: center;
+}
+.cards .bottom-content-about .company-logos {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
