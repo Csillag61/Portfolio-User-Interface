@@ -554,17 +554,20 @@ footer .copyright {
 .carousel .left-button:hover,
 .carousel .right-button:hover {
   color: #990000;
+  font-weight: bold;
 }
 .carousel .left-button {
   top: 55%;
   left: 10px;
   transform: translate(0, -50%);
   color: black;
+  font-weight: bold;
 }
 .carousel .right-button {
   top: 45%;
   right: 10px;
   color: black;
+  font-weight: bold;
 }
 .carousel img {
   width: 1024px;
